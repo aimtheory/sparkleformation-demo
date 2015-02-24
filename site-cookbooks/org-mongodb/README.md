@@ -1,23 +1,14 @@
 org-mongodb Cookbook
 ====================
-TODO: Enter the cookbook description here.
-
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+This is a demo cookbook to show what you can do with an organization specific cookbook and MongoDB.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
-
-e.g.
-#### packages
-- `toaster` - org-mongodb needs toaster to brown your bagel.
+Have a development environment with Ruby 2+ installed.
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
 
-e.g.
 #### org-mongodb::default
 <table>
   <tr>
@@ -27,19 +18,33 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['org-mongodb']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['org-mongodb']['config']['dbpath']</tt></td>
+    <td>Text</td>
+    <td>The MongoDB data directory</td>
+    <td><tt>'/opt/org/data'</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['org-mongodb']['config']['logpath']</tt></td>
+    <td>Text</td>
+    <td>The MongoDB log file path</td>
+    <td><tt>'/opt/org/log/mongodb.log'</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['org-mongodb']['config']['bind_ip']</tt></td>
+    <td>Text</td>
+    <td>The MongoDB listen IP address</td>
+    <td><tt>'0.0.0.0'</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['org-mongodb']['config']['port']</tt></td>
+    <td>Text</td>
+    <td>The mongod service IP port</td>
+    <td><tt>'29019'</tt></td>
   </tr>
 </table>
 
 Usage
 -----
-#### org-mongodb::default
-TODO: Write usage instructions for each cookbook.
-
-e.g.
 Just include `org-mongodb` in your node's `run_list`:
 
 ```json

@@ -26,7 +26,7 @@ Attributes
     <td><tt>['org-nginx']['default_root']</tt></td>
     <td>String</td>
     <td>The default web server root directory</td>
-    <td><tt>'1.6.2'</tt></td>
+    <td><tt>'/var/www'</tt></td>
   </tr>
   <tr>
     <td><tt>['org-nginx']['disable_access_log']</tt></td>

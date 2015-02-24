@@ -19,25 +19,25 @@ Attributes
   </tr>
   <tr>
     <td><tt>['org-mongodb']['config']['dbpath']</tt></td>
-    <td>Text</td>
+    <td>String</td>
     <td>The MongoDB data directory</td>
     <td><tt>'/opt/org/data'</tt></td>
   </tr>
   <tr>
     <td><tt>['org-mongodb']['config']['logpath']</tt></td>
-    <td>Text</td>
+    <td>String</td>
     <td>The MongoDB log file path</td>
     <td><tt>'/opt/org/log/mongodb.log'</tt></td>
   </tr>
   <tr>
     <td><tt>['org-mongodb']['config']['bind_ip']</tt></td>
-    <td>Text</td>
+    <td>String</td>
     <td>The MongoDB listen IP address</td>
     <td><tt>'0.0.0.0'</tt></td>
   </tr>
   <tr>
     <td><tt>['org-mongodb']['config']['port']</tt></td>
-    <td>Text</td>
+    <td>String</td>
     <td>The mongod service IP port</td>
     <td><tt>'29019'</tt></td>
   </tr>
@@ -58,9 +58,6 @@ Just include `org-mongodb` in your node's `run_list`:
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
-
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change

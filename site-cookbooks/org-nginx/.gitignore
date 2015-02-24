@@ -1,0 +1,7 @@
+.bundle
+.kitchen
+.librarian
+*~
+bundle
+cookbooks
+tmp

@@ -1,0 +1,14 @@
+---
+driver: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-12.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[org-mongodb]
+    attributes:

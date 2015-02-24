@@ -1,23 +1,13 @@
 org-nginx Cookbook
 ==================
-TODO: Enter the cookbook description here.
-
-e.g.
-This cookbook makes your favorite breakfast sandwich.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
-
-e.g.
-#### packages
-- `toaster` - org-nginx needs toaster to brown your bagel.
+Have a development environment with Ruby 2+ installed.
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
 
-e.g.
 #### org-nginx::default
 <table>
   <tr>
@@ -27,19 +17,27 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['org-nginx']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
+    <td><tt>['org-nginx']['version']</tt></td>
+    <td>String</td>
+    <td>Version of nginx to install</td>
+    <td><tt>'1.6.2'</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['org-nginx']['default_root']</tt></td>
+    <td>String</td>
+    <td>The default web server root directory</td>
+    <td><tt>'1.6.2'</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['org-nginx']['disable_access_log']</tt></td>
+    <td>String</td>
+    <td>Whether to disable the nginx access log</td>
     <td><tt>true</tt></td>
   </tr>
 </table>
 
 Usage
 -----
-#### org-nginx::default
-TODO: Write usage instructions for each cookbook.
-
-e.g.
 Just include `org-nginx` in your node's `run_list`:
 
 ```json
@@ -53,9 +51,6 @@ Just include `org-nginx` in your node's `run_list`:
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
-
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change

@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'librarian-chef'
+
+group :development do
+  gem 'chef-zero'
+  gem 'test-kitchen'
+  gem 'kitchen-vagrant'
+  gem 'guard', '2.6.0'
+  gem 'guard-kitchen'
+  gem 'guard-foodcritic'
+  gem 'foodcritic'
+end

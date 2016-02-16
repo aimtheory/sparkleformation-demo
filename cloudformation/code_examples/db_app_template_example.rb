@@ -58,6 +58,7 @@ SparkleFormation.new('db_app').load(:base).overrides do
   # Install nginx in app AutoScalingGroup
   resources(:app_launch_configuration) do
     registry!(:apt_get_update)
+    registry!(:chef_config)
     registry!(:nginx_install)
   end
  

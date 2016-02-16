@@ -1,5 +1,4 @@
-SparkleFormation.new('app_load_balancer').load(:base).overrides do
-
+SparkleFormation.new(:app_load_balancer, :provider => :aws).load(:base).overrides do
   description 'Database application load balancer'
  
   # Create the load balancer resource and use defaults

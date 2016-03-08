@@ -1,5 +1,0 @@
-site "https://supermarket.getchef.com/api/v1"
-
-cookbook 'mongodb'
-
-cookbook 'org-mongodb', :path => '.'
